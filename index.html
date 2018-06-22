@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GIFxpression</title>
+
+  <!-- Bootstrap 4 Alpha -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="display-1">GIFxpression<span class="accent">.</span></h1> 
+
+    </div>
+    
+    <div class="rating">
+      <div class="about">
+          Explain it to me:   <button type="button" class="btn btn-info" data-toggle="modal" data-target="#explanationModal"><!-- Button trigger modal -->
+          About
+        </button>
+      </div>
+      <br>
+      Allowed rating to display:
+      <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-secondary btn-sm active">
+          <input type="radio" name="options" id="option0" autocomplete="off" checked>G
+        </label>
+        <label class="btn btn-secondary btn-sm">
+          <input type="radio" name="options" id="option1" autocomplete="off" checked>PG
+        </label>
+        <label class="btn btn-secondary btn-sm">
+          <input type="radio" name="options" id="option2" autocomplete="off">PG-13
+        </label>
+        <label class="btn btn-secondary btn-sm">
+          <input type="radio" name="options" id="option3" autocomplete="off">R
+        </label>
+      </div> <!-- btn-group -->
+        
+    </div><!-- rating -->
+    <!-- Modal -->
+    <div class="modal fade" id="explanationModal" tabindex="-1" role="dialog" aria-labelledby="explanationModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="explanationModalTitleLong">About</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Ever wanted to share just the right GIF to express yourself? Well GIFxpression is a web application designed to help you express yourself with GIF's! It uses the GIPHY API to return GIF's that meet your unique expression needs.</p>
+              <p>To get started, select a rating, then click on a button with the desired expression you want GIF's for! Or better yet, enter your own expression in the input box, and hit enter to make your own button. Then all you need to do is click on it, and see what GIF's pop up! If you like any of the GIF's displayed, click the "copy embed code" to express yourself anywhere on the internet!</p>
+              <p>*Not reponsible for any arguments GIF expressions may end up creating. Use GIF's responsibly*</p>
+              <p>Created by <a href="https://github.com/realSenses">realSenses</a> 2018.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div> <!--Modal end-->
+
+
+    <div class="buttons"></div>
+    <form action="#">
+      <div class="expressions form-group">
+        <input type="text" id="feeling" class="form-control" placeholder="What would you like to express with a GIF?"> <!-- Add new button-->
+      </div>
+    </form>
+
+    <div class="gifs">
+      <div class="card-columns"></div> <!--Where GIF's get appended to-->
+    </div>
+  </div>
+
+<!-- jQuery / Google CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+<!-- Custom JS -->
+<script src="./assets/js/app.js"></script>
+</body>
+</html>
